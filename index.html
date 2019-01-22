@@ -59,7 +59,7 @@
       </div>
       <div class="galery ">
         <h4>Fotos do grupo</h4>
-        <div class="slideshow-container">
+        <div id="pics" class="slideshow-container">
           <div class="mySlides fade">
             <img class="img" src="./imgs/img (1).jpg" />
           </div>
@@ -76,8 +76,20 @@
             <img class="img" src="./imgs/img (4).jpg" />
           </div>
 
-          <a class="prev" onclick="plusSlides(-1)"> </a>
-          <a class="next" onclick="plusSlides(1)"> </a>
+          <a
+            class="prev"
+            onclick="plusSlides(-1)"
+            type="button"
+            onclick="toggleFullScreen()"
+          >
+          </a>
+          <a
+            class="next"
+            type="button"
+            onclick="plusSlides(1)"
+            onclick="toggleFullScreen()"
+          >
+          </a>
         </div>
         <br />
       </div>
